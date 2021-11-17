@@ -28,7 +28,7 @@ int main() {
 
   if (one && two) {
     int status;
-    printf("Child process %d slept for %d and is now finished\n", wait(&status), WEXITSTATUS(status));
+    printf("Child process %d slept for %d seconds and is now finished\n", wait(&status), WEXITSTATUS(status));
     printf("Parent process finished\n");
     return 0;
   }
